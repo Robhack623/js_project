@@ -1,4 +1,255 @@
 
-input {
-    margin: .4rem;
+@media (max-width:749px){
+    body, html{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding:0;
+        
+    }
+
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        background-color: green;
+    }
+
+    .logo{
+        display: flex;
+        height: 20%;
+        width: 100%;
+        background-color: blue;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search-bar{
+        
+        height: 6%;
+        width: 100%;
+        background-color: red;
+    }
+
+    .nav-container{
+        display:flex;
+        width: 100%;
+        height: 8%;
+        background-color: fuchsia;
+        justify-content: center;
+    }
+
+    .az-drinks{
+        margin-left:5px;
+        margin-right:5px;
+        height: 100%;
+        width: 30%;
+        background-color: yellow;
+    }
+
+    .ingredient-drinks{
+        margin-left:5px;
+        margin-right: 5px;
+        height: 100%;
+        width: 30%;
+        background-color: yellow;
+    }
+
+    .random-drinks{
+        margin-left: 5px;
+        margin-right: 5px;
+        height: 100%;
+        width: 30%;
+        background-color: yellow;
+    }
+
+    .bottom-container{
+        display:flex;
+        height:65%;
+        width: 100%;
+        background-color: aqua;
+    }
+
+    .drinks-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100%;
+        width: 90%;
+        background-color: blueviolet;
+        overflow: scroll;
+        
+        
+    }
+
+    .scroll-bar{
+        display: flex;
+        height: 100%;
+        width: 10%;
+        max-width: 50px;
+        background-color: olive;
+    }
+
+    .drink-container{
+        height: 150px;
+        width: 100%;
+        margin: 2px;
+        margin-left: 0;
+        background-color: brown;
+    }
+
+    .about-us{
+        height:5%;
+        width: 100%;
+        background-color: orange;
+    }
+
+    .img-resize{
+        height: 100px;
+        width: auto;
+    }
+}
+
+
+@media (min-width:750px){
+    body, html{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding:0;
+        
+    }
+
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        background-color: green;
+    }
+
+    .logo{
+        display: flex;
+        height: 20%;
+        width: 30%;
+        max-width: 600px;
+        background-color: blue;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search-bar{
+        display: flex;
+        align-self: center;
+        height: 6%;
+        width: 30%;
+        max-width: 600px;
+        background-color: red;
+    }
+
+    .nav-container{
+        display:flex;
+        width: 100%;
+        height: 8%;
+        background-color: fuchsia;
+        justify-content: center;
+    }
+
+    .az-drinks{
+        margin-left:5px;
+        margin-right:5px;
+        height: 100%;
+        width: 20%;
+        max-width: 200px;
+        background-color: yellow;
+    }
+
+    .ingredient-drinks{
+        margin-left:5px;
+        margin-right: 5px;
+        height: 100%;
+        width: 20%;
+        max-width: 200px;
+        background-color: yellow;
+    }
+
+    .random-drinks{
+        margin-left: 5px;
+        margin-right: 5px;
+        height: 100%;
+        width: 20%;
+        max-width: 200px;
+        background-color: yellow;
+    }
+
+    .bottom-container{
+        display:flex;
+        height: 65%;
+        width: 100%;
+        background-color: aqua;
+    }
+
+    .drinks-container{
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        width: 50%;
+        background-color: blueviolet;
+        flex-wrap: wrap;
+        overflow: scroll;
+        align-content: flex-start;
+    }
+
+    .scroll-bar{
+        display: flex;
+        height: 100%;
+        width: 8%;
+        max-width: 50px;
+        background-color: olive;
+    }
+
+    .drink-container{
+        height: 125px;
+        width: 125px;
+        margin: 10px;
+        background-color: brown;
+    }
+
+    .bottom-right-container{
+        height: 100%;
+        width: 50%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: darksalmon;
+    }
+
+    .large-img{
+        height:50%;
+        width:325px;
+        margin-top: 10px;
+        background-color: black;
+    }
+
+    .drink-description{
+        height: 45%;
+        width: 80%;
+        background-color: gray;
+        margin-top: 10px;
+    }
+
+
+    .about-us{
+        
+        height:5%;
+        width: 100%;
+        background-color: orange;
+    }
+
+    .img-resize{
+        height: 100px;
+        width: auto;
+    }
 }
