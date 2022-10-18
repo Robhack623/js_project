@@ -1,12 +1,3 @@
-// extra
-// google places API, show places to buy drinks, bars near me
-
-// 
-// https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a
-
-// random
-// www.thecocktaildb.com/api/json/v1/1/random.php
-
 const drinksUL = document.getElementById("drinksUL")
 const randomDrinkBtn = document.getElementById("randomDrinkBtn")
 
