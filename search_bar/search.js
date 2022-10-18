@@ -4,39 +4,42 @@ const letter = document.getElementById('letter')
 const letterA = document.getElementById("letterA")
 
 
-let bevs =[]
+let drinks =[]
+console.log(drinks)
 
-console.log(bevs)
 searchBar.addEventListener('keyup', (e) => {
-    const searchString = e.target.value;
-    const filteredBevs = bevs.filter((result) => {
+    const searchString = e.target.value.toLowerCase();
+    const filteredBevs = drinks.filter((result) => {
         return ( 
-            result.strDrink.includes(searchString) 
+            result.strDrink.toLowerCase().includes(searchString) 
         );
     });
-   console.log(filteredBevs)
+    displayLetterA(filteredBevs)
 })
 
 
 
 
-const loadBevs = async () => {
-    const url = "https://www.thecocktaildb.com/api/json/v2/9973533/search.php?f=a"
+const getLetterA = async function() {
+
+    const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a"
+
     let response = await fetch(url)
-    bevs = await response.json()
-    displayBevs(bevs)
+    let bevs = await response.json()
+    drinks = bevs.drinks
+    displayLetterA(drinks)
 }
 
-const displayBevs = () => {
-    let drinks = bevs.drinks
-    const htmlString = drinks
-        .map((result) => {
+const displayLetterA = function(drinks){
+
+    let drink = drinks.map(function(result){
         return`
         <h4>${result.strDrink}</h4>
-        `;
+        `
     })
-        .join('');
-        letter.innerHTML = htmlString;
-};
+        letter.innerHTML = drink.join("")
+}
 
-loadBevs();
+
+
+getLetterA()
