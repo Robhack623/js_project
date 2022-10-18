@@ -487,6 +487,7 @@ drinksAZ.addEventListener('click', function(){
 })
 
 const randDrink = document.getElementById('randDrink')
+const largeDrink = document.getElementById('largeDrink')
 
 async function getRandomDrink() {
     const url = "https://www.thecocktaildb.com/api/json/v2/9973533/random.php"
@@ -494,6 +495,7 @@ async function getRandomDrink() {
     let bevs = await response.json()
     let drinks = bevs.drinks
     let random = drinks.map(function(result) {
+
         return`
         <h2><u>${result.strDrink}</u></h2>
         <h3>Instructions:</h3>
@@ -519,9 +521,15 @@ async function getRandomDrink() {
         <img src="${result.strDrinkThumb}" />
         `
     })
-allDrinks.innerHTML = random.join("")
+    if (screenSize.matches){
+    largeDrink.innerHTML = random.join("")
+    }else{
+    allDrinks.innerHTML = random.join("")
+    }
 }
 
 randDrink.addEventListener('click', function(){
     getRandomDrink()
 })
+
+var screenSize = window.matchMedia("(min-width: 750px)")
