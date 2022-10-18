@@ -3,21 +3,79 @@
 }
 
 .drinks-container::-webkit-scrollbar-thumb{
-    background-color: green;
+    background-color: none;
     border-radius: 20px;
 }
 
 .drinks-container::-webkit-scrollbar-track{
-    background-color: aquamarine;
+    background-color: none;
 }
 
 .drinks-container::-webkit-scrollbar-button:vertical:start:increment{
-    background-image: url('')
+    background-image: none
 }
 
 .drinks-container::-webkit-scrollbar-button:vertical:end:decrement {
-    background-image: url('')
+    background-image: none
+}
 
+.drinks-container::-webkit-scrollbar-corner{
+    background-color: none;
+}
+
+
+.content-align::-webkit-scrollbar{
+    width:20px;
+}
+
+.content-align::-webkit-scrollbar-thumb{
+    background-color: none;
+    border-radius: 20px;
+}
+
+.content-align::-webkit-scrollbar-track{
+    background-color: none;
+}
+
+.content-align::-webkit-scrollbar-button:vertical:start:increment{
+    background-image: none
+}
+
+.content-align::-webkit-scrollbar-button:vertical:end:decrement {
+    background-image: none
+}
+
+.content-align::-webkit-scrollbar-corner{
+    background-color: none;
+}
+
+.bottom-right-container::-webkit-scrollbar{
+    width:20px;
+}
+
+.bottom-right-container::-webkit-scrollbar-thumb{
+    background-color: none;
+    border-radius: 20px;
+}
+
+.bottom-right-container::-webkit-scrollbar-track{
+    background-color: none;
+}
+
+.bottom-right-container::-webkit-scrollbar-button:vertical:start:increment{
+    background-image: none
+}
+
+.bottom-right-container::-webkit-scrollbar-button:vertical:end:decrement {
+    background-image: none
+}
+
+.bottom-right-container::-webkit-scrollbar-corner{
+    background-color: none;
+}
+
+ul{
+    list-style: none;
 }
 
 .img-thumbnail{
@@ -114,8 +172,22 @@
         width: 90%;
         background-color: blueviolet;
         overflow: scroll;
-        
-        
+        justify-content: center;
+         
+    }
+
+    .content-align{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(72, 129, 151);
+        overflow: scroll;
+        align-items: center;
+        align-content: flex-start;
+        text-align: center;
+
+
     }
 
     .scroll-bar{
@@ -138,6 +210,13 @@
         text-align: center;
     }
 
+    .large-img-mobile{
+        height: 250px;
+        width: 250px;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+
     .about-us{
         height:5%;
         width: 100%;
@@ -148,7 +227,13 @@
         height: 100px;
         width: auto;
     }
+    
+    .bottom-right-container{
+        display: none;
+    }
+
 }
+
 
 
 @media (min-width:750px){
@@ -247,7 +332,16 @@
         background-color: blueviolet;
         flex-wrap: wrap;
         overflow: scroll;
-        align-content: flex-start;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .large-img-mobile{
+        height: 250px;
+        width: 250px;
+        margin-top: 5px;
+        border-radius: 5px;
     }
 
     .scroll-bar{
@@ -275,7 +369,10 @@
         display:flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        text-align: center;
         background-color: darksalmon;
+        overflow: scroll;
     }
 
     .large-img{
