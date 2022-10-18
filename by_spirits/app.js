@@ -33,7 +33,6 @@ async function passValue(drinker) {
             <img src="${drinky.strDrinkThumb}">
         `
     })
-    
     chosenDrink.innerHTML = allDrinks.join('')
 }
 
@@ -42,7 +41,6 @@ async function passAnother(chooseThisDrink) {
     let response = await fetch(url)
     let drink = await response.json()
     let thisDrinks = drink.drinks
-    console.log(thisDrinks)
     const thisDrink = thisDrinks.map(function(drinky) {
         return `
         <h2>${drinky.strDrink}</h2>
@@ -64,7 +62,6 @@ async function passAnother(chooseThisDrink) {
             ${drinky.strIngredient14 ? `<li>${drinky.strIngredient14} - ${drinky.strMeasure14}</li>` : ""}
             ${drinky.strIngredient15 ? `<li>${drinky.strIngredient15} - ${drinky.strMeasure15}</li>` : ""}
         </ul>
-
         <p>${drinky.strInstructions}<p>
         `
     })
