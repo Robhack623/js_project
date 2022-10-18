@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 
-=======
-const drinksUL = document.getElementById("drinksUL")
->>>>>>> 1ca3e2b1f78d557fd0e4016d7319bb37d8f24ea4
 const randomDrinkBtn = document.getElementById("randomDrinkBtn")
 randomDrinkBtn.addEventListener("click", function() {
     async function getRandomDrink() {
