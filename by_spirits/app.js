@@ -37,7 +37,6 @@ async function passValue(drinker) {
     chosenDrink.innerHTML = allDrinks.join('')
 }
 
-
 async function passAnother(chooseThisDrink) {
     let url = `https://www.thecocktaildb.com/api/json/v2/9973533/lookup.php?i=${chooseThisDrink}`
     let response = await fetch(url)
@@ -49,14 +48,21 @@ async function passAnother(chooseThisDrink) {
         <h2>${drinky.strDrink}</h2>
         <img src="${drinky.strDrinkThumb}">
         <ul>Ingredients:
-            <li>${drinky.strIngredient1} - ${drinky.strMeasure1}</li>
-            <li>${drinky.strIngredient2} - ${drinky.strMeasure2}</li>
-            <li>${drinky.strIngredient3} - ${drinky.strMeasure3}</li>
-            <li>${drinky.strIngredient4} - ${drinky.strMeasure4}</li>
-            <li>${drinky.strIngredient5} - ${drinky.strMeasure5}</li>
-            <li>${drinky.strIngredient6} - ${drinky.strMeasure6}</li>
-            <li>${drinky.strIngredient7} - ${drinky.strMeasure7}</li>
-            <li>${drinky.strIngredient8} - ${drinky.strMeasure8}</li>
+            ${drinky.strIngredient1 ? `<li>${drinky.strIngredient1} - ${drinky.strMeasure1}</li>` : ""}
+            ${drinky.strIngredient2 ? `<li>${drinky.strIngredient2} - ${drinky.strMeasure2}</li>` : ""}
+            ${drinky.strIngredient3 ? `<li>${drinky.strIngredient3} - ${drinky.strMeasure3}</li>` : ""}
+            ${drinky.strIngredient4 ? `<li>${drinky.strIngredient4} - ${drinky.strMeasure4}</li>` : ""}
+            ${drinky.strIngredient5 ? `<li>${drinky.strIngredient5} - ${drinky.strMeasure5}</li>` : ""}
+            ${drinky.strIngredient6 ? `<li>${drinky.strIngredient6} - ${drinky.strMeasure6}</li>` : ""}
+            ${drinky.strIngredient7 ? `<li>${drinky.strIngredient7} - ${drinky.strMeasure7}</li>` : ""}
+            ${drinky.strIngredient8 ? `<li>${drinky.strIngredient8} - ${drinky.strMeasure8}</li>` : ""}
+            ${drinky.strIngredient9 ? `<li>${drinky.strIngredient9} - ${drinky.strMeasure9}</li>` : ""}
+            ${drinky.strIngredient10 ? `<li>${drinky.strIngredient10} - ${drinky.strMeasure10}</li>` : ""}
+            ${drinky.strIngredient11 ? `<li>${drinky.strIngredient11} - ${drinky.strMeasure11}</li>` : ""}
+            ${drinky.strIngredient12 ? `<li>${drinky.strIngredient12} - ${drinky.strMeasure12}</li>` : ""}
+            ${drinky.strIngredient13 ? `<li>${drinky.strIngredient13} - ${drinky.strMeasure13}</li>` : ""}
+            ${drinky.strIngredient14 ? `<li>${drinky.strIngredient14} - ${drinky.strMeasure14}</li>` : ""}
+            ${drinky.strIngredient15 ? `<li>${drinky.strIngredient15} - ${drinky.strMeasure15}</li>` : ""}
         </ul>
 
         <p>${drinky.strInstructions}<p>
@@ -64,12 +70,6 @@ async function passAnother(chooseThisDrink) {
     })
     chosenDrink.innerHTML = thisDrink.join('')
 }
-
-
-
-
-
-
 
 randomDrink.addEventListener('click', function() {
     async function getRandom() {
@@ -87,4 +87,3 @@ randomDrink.addEventListener('click', function() {
     }
     getRandom()
 })
-
