@@ -10,6 +10,10 @@
 * **Features on the app:**
     Our homepage first shows our most popular drinks when loaded. In our "navigation bar", the user is given the option of sorting through our drinks alphabetically (split into groups), by chosen spirit, or to randomly generate a drink. There is also a search bar at the top to find drinks that match the name of the drinks based on the user input. 
 
+<p align="center">
+    <img src="images/boos_logo.png" width="230px" height="250px">
+</P>
+
 ## Preview of SPIRIT GUIDE
 
 <img src="#" height="400px" width="600px">
