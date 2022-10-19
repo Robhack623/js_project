@@ -24,7 +24,16 @@ async function getPopularDrinks() {
     })
         allDrinks.innerHTML += drink.join("")
 }
+
 getPopularDrinks()
+
+window.onload = function(){
+    if (screenSize.matches){
+        getRandomDrinkDesktop()
+    }else{
+        getRandomDrinkMobile()
+    }
+}
 
 async function getLetterAMobile() {
 
