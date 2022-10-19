@@ -481,9 +481,11 @@ const azDrinks = async()=>{
 
 drinksAZ.addEventListener('click', function(){
 
-    azDrinks()
-    
-    
+    if (allDrinks.innerHTML.trim() == ""){
+        azDrinks()
+    }else{
+        console.log("uh uh uh you didn't say the magic word")
+    }
 })
 
 const randDrink = document.getElementById('randDrink')
