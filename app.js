@@ -8,6 +8,34 @@ const chooseJN = document.getElementById("chooseJN")
 const chooseOS = document.getElementById("chooseOS")
 const chooseTZ = document.getElementById("chooseTZ")
 
+async function getPopularDrinks() {
+
+    const url = "https://www.thecocktaildb.com/api/json/v2/9973533/popular.php"
+
+    let response = await fetch(url)
+    let bevs = await response.json()
+    
+    let drinks = bevs.drinks
+    
+    let drink = drinks.map(function(result){
+        return`
+        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        `
+    })
+        allDrinks.innerHTML += drink.join("")
+}
+
+getPopularDrinks()
+
+window.onload = function(){
+    if (screenSize.matches){
+        getRandomDrinkDesktop()
+    }else{
+        getRandomDrinkMobile()
+    }
+}
+
+
 async function getLetterAMobile() {
 
     const url = "https://www.thecocktaildb.com/api/json/v2/9973533/search.php?f=a"
