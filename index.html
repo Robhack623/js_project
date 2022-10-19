@@ -13,30 +13,24 @@
 
         <div class="logo"><img class="img-resize" src="images/cocktail.png"></div>
 
-        <div class="search-bar"></div>
+        <div class="search-bar">
+            <input type="text" name="searchBar" id="searchBar" class="searchBar" placeholder="search for a drink" />
+        </div>
 
         <div class="nav-container">
-            <div class="az-drinks"></div>
-            <div class="ingredient-drinks"></div>
-            <div class="random-drinks"></div>
+            <div class="az-drinks"><button id="drinksAZ">Drinks A-Z</button></div>
+            <div class="ingredient-drinks"><button id="ingDrinks">Drinks By Spirit</button></div>
+            <div class="random-drinks"><button id="randDrink">Random Drink</button></div>
         </div>
 
         <div class="bottom-container">
-            <div class="drinks-container">
-                <div class ="drink-container"></div>
-                <div class ="drink-container"></div>
-                <div class ="drink-container"></div>
-                <div class ="drink-container"></div>
-                <div class ="drink-container"></div>
-                <div class ="drink-container"></div>
-                <div class ="drink-container"></div>
-                <div class ="drink-container"></div>
-                <div class ="drink-container"></div>
+            <div id="allDrinks" class="drinks-container">
             </div>
+            
             <div class="scroll-bar"></div>
             <div class="bottom-right-container">
-                <div class ="large-img"></div>
-                <div class ="drink-description"></div>
+                <div class ="large-img" id="largeImg"></div>
+                <div class ="drink-description" id="drinkDescript"></div>
             </div>
 
         </div>    
