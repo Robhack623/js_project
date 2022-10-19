@@ -21,10 +21,13 @@
 ## Live link: 
 - ["Spirit Guide"](http://-----)
 
+## Featured programs: 
+- HTML, CSS, JavaScript, 
+
+## External API:
+- The Cocktail DB API
+
 ## SPIRIT GUIDE builders:
 - [Matt Herringshaw](https://github.com/MattHerringshaw1) 
 - [Eddie Zaboroskie](https://github.com/ezaboroskie) 
 - [Rob Hackett](https://github.com/Robhack623) 
-
-## Featured programs: 
-- HTML, CSS, JavaScript
