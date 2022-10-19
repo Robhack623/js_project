@@ -8,6 +8,8 @@ const chooseJN = document.getElementById("chooseJN")
 const chooseOS = document.getElementById("chooseOS")
 const chooseTZ = document.getElementById("chooseTZ")
 
+/////vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
 async function getPopularDrinks() {
 
     const url = "https://www.thecocktaildb.com/api/json/v2/9973533/popular.php"
@@ -34,6 +36,8 @@ window.onload = function(){
         getRandomDrinkMobile()
     }
 }
+
+//////^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 async function getLetterAMobile() {
 
