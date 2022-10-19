@@ -1,6 +1,13 @@
 const drinksAZ = document.getElementById("drinksAZ")
 const allDrinks = document.getElementById("allDrinks")
 
+////vvvvvvvvvvvvvvvvvvvv
+const chooseAD = document.getElementById("chooseAD")
+const chooseEI = document.getElementById("chooseEI")
+const chooseJN = document.getElementById("chooseJN")
+const chooseOS = document.getElementById("chooseOS")
+const chooseTZ = document.getElementById("chooseTZ")
+
 
 async function getLetterA() {
 
@@ -13,13 +20,11 @@ async function getLetterA() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container">${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnother(${result.idDrink})'>${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML = drink.join("")
 }
-
-
 
 async function getLetterB() {
 
@@ -32,7 +37,7 @@ async function getLetterB() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container">${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnother(${result.idDrink})'>${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -49,7 +54,7 @@ async function getLetterC() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container">${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnother(${result.idDrink})'>${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -66,7 +71,7 @@ async function getLetterD() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container">${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnother(${result.idDrink})'>${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -83,10 +88,10 @@ async function getLetterE() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container">${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnother(${result.idDrink})'>${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
-        allDrinks.innerHTML += drink.join("")
+        allDrinks.innerHTML = drink.join("")
 }
 
 async function getLetterF() {
@@ -100,7 +105,7 @@ async function getLetterF() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container">${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnother(${result.idDrink})'>${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -117,7 +122,7 @@ async function getLetterG() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container">${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnother(${result.idDrink})'>${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -134,7 +139,7 @@ async function getLetterH() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container">${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnother(${result.idDrink})'>${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -151,7 +156,7 @@ async function getLetterI() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container">${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnother(${result.idDrink})'>${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -168,10 +173,10 @@ async function getLetterJ() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container">${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnother(${result.idDrink})'>${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
-        allDrinks.innerHTML += drink.join("")
+        allDrinks.innerHTML = drink.join("")
 }
 
 async function getLetterK() {
@@ -185,7 +190,7 @@ async function getLetterK() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container">${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnother(${result.idDrink})'>${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -202,7 +207,7 @@ async function getLetterL() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container">${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnother(${result.idDrink})'>${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -219,7 +224,7 @@ async function getLetterM() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container">${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnother(${result.idDrink})'>${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -236,7 +241,7 @@ async function getLetterN() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container">${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnother(${result.idDrink})'>${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -253,10 +258,10 @@ async function getLetterO() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container">${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnother(${result.idDrink})'>${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
-        allDrinks.innerHTML += drink.join("")
+        allDrinks.innerHTML = drink.join("")
 }
 
 async function getLetterP() {
@@ -270,7 +275,7 @@ async function getLetterP() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container">${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnother(${result.idDrink})'>${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -287,7 +292,7 @@ async function getLetterQ() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container">${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnother(${result.idDrink})'>${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -304,7 +309,7 @@ async function getLetterR() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container">${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnother(${result.idDrink})'>${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -321,7 +326,7 @@ async function getLetterS() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container">${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnother(${result.idDrink})'>${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -338,10 +343,10 @@ async function getLetterT() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container">${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnother(${result.idDrink})'>${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
-        allDrinks.innerHTML += drink.join("")
+        allDrinks.innerHTML = drink.join("")
 }
 
 async function getLetterU() {
@@ -355,7 +360,7 @@ async function getLetterU() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container">${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnother(${result.idDrink})'>${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -372,7 +377,7 @@ async function getLetterV() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container">${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnother(${result.idDrink})'>${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -389,7 +394,7 @@ async function getLetterW() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container">${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnother(${result.idDrink})'>${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -406,7 +411,7 @@ async function getLetterX() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container">${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnother(${result.idDrink})'>${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -423,7 +428,7 @@ async function getLetterY() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container">${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnother(${result.idDrink})'>${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -440,48 +445,71 @@ async function getLetterZ() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container">${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnother(${result.idDrink})'>${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
 }
 
-const azDrinks = async()=>{
-    try{
-        await getLetterA();
-        await getLetterB();
-        await getLetterC();
-        await getLetterD();
-        await getLetterE();
-        await getLetterF();
-        await getLetterG();
-        await getLetterH();
-        await getLetterI();
-        await getLetterJ();
-        await getLetterK();
-        await getLetterL();
-        await getLetterM();
-        await getLetterN();
-        await getLetterO();
-        await getLetterP();
-        await getLetterQ();
-        await getLetterR();
-        await getLetterS();
-        await getLetterT();
-        await getLetterV();
-        await getLetterW();
-        await getLetterY();
-        await getLetterZ();
-
-    } catch (err) {
-        console.error(err);
-    }
-
+const adDrinks = async()=>{
+    await getLetterA();
+    await getLetterB();
+    await getLetterC();
+    await getLetterD();
 }
 
-drinksAZ.addEventListener('click', function(){
-        azDrinks()
+const eiDrinks = async()=>{
+    await getLetterE();
+    await getLetterF();
+    await getLetterG();
+    await getLetterH();
+    await getLetterI();
+}
+
+const jnDrinks = async()=>{
+    await getLetterJ();
+    await getLetterK();
+    await getLetterL();
+    await getLetterM();
+    await getLetterN();
+}
+
+const osDrinks = async()=>{
+    await getLetterO();
+    await getLetterP();
+    await getLetterQ();
+    await getLetterR();
+    await getLetterS();
+}
+
+const tzDrinks = async()=>{
+    await getLetterT();
+    await getLetterV();
+    await getLetterW();
+    await getLetterY();
+    await getLetterZ();
+}
+
+chooseAD.addEventListener('click', function(){
+    adDrinks()
 })
+
+chooseEI.addEventListener('click', function(){
+    eiDrinks()
+})
+
+chooseJN.addEventListener('click', function(){
+    jnDrinks()
+})
+
+chooseOS.addEventListener('click', function(){
+    osDrinks()
+})
+
+chooseTZ.addEventListener('click', function(){
+    tzDrinks()
+})
+/////^^^^^^^^^^^^
 
 const randDrink = document.getElementById('randDrink')
 const largeImg = document.getElementById('largeImg')
@@ -569,6 +597,40 @@ randDrink.addEventListener('click', function(){
         getRandomDrinkMobile()
     }
 })
+
+async function passAnother(chooseThisDrink) {
+    let url = `https://www.thecocktaildb.com/api/json/v2/9973533/lookup.php?i=${chooseThisDrink}`
+    let response = await fetch(url)
+    let drink = await response.json()
+    let thisDrinks = drink.drinks
+    const thisDrink = thisDrinks.map(function(result) {
+        return `
+        <div class = "bottom-right-container" id="rightContainer">
+        <img class="large-img-mobile" src="${result.strDrinkThumb}">
+        <h2>${result.strDrink}</h2>
+        <p>${result.strInstructions}</p>
+        <ul>
+                ${result.strIngredient1 ? `<li>${result.strIngredient1} - ${result.strMeasure1}</li>` : ""}
+                ${result.strIngredient2 ? `<li>${result.strIngredient2} - ${result.strMeasure2}</li>` : ""}
+                ${result.strIngredient3 ? `<li>${result.strIngredient3} - ${result.strMeasure3}</li>` : ""}
+                ${result.strIngredient4 ? `<li>${result.strIngredient4} - ${result.strMeasure4}</li>` : ""}
+                ${result.strIngredient5 ? `<li>${result.strIngredient5} - ${result.strMeasure5}</li>` : ""}
+                ${result.strIngredient6 ? `<li>${result.strIngredient6} - ${result.strMeasure6}</li>` : ""}
+                ${result.strIngredient7 ? `<li>${result.strIngredient7} - ${result.strMeasure7}</li>` : ""}
+                ${result.strIngredient8 ? `<li>${result.strIngredient8} - ${result.strMeasure8}</li>` : ""}
+                ${result.strIngredient9 ? `<li>${result.strIngredient9} - ${result.strMeasure9}</li>` : ""}
+                ${result.strIngredient10 ? `<li>${result.strIngredient10} - ${result.strMeasure10}</li>` : ""}
+                ${result.strIngredient11 ? `<li>${result.strIngredient11} - ${result.strMeasure11}</li>` : ""}
+                ${result.strIngredient12 ? `<li>${result.strIngredient12} - ${result.strMeasure12}</li>` : ""}
+                ${result.strIngredient13 ? `<li>${result.strIngredient13} - ${result.strMeasure13}</li>` : ""}
+                ${result.strIngredient14 ? `<li>${result.strIngredient14} - ${result.strMeasure14}</li>` : ""}
+                ${result.strIngredient15 ? `<li>${result.strIngredient15} - ${result.strMeasure15}</li>` : ""}
+            </ul>
+        </div>
+        `
+    })
+    rightContainer.innerHTML = thisDrink.join('')
+}
 
 var screenSize = window.matchMedia("(min-width: 750px)")
 
