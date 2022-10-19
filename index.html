@@ -13,30 +13,44 @@
 
         <div class="logo"><img class="img-resize" src="images/cocktail.png"></div>
 
-        <div class="search-bar"></div>
+        <div class="search-bar"><input type="text" name="searchBar" id="searchBar" class="searchBar" placeholder="search for a drink" /></div>
 
         <div class="nav-container">
-            <div class="az-drinks"></div>
-            <div class="ingredient-drinks"></div>
-            <div class="random-drinks"></div>
+            <div class="az-drinks">
+                <div class="dropdown">
+                    <button class="dropbtn">Find a Drink</button>
+                    <div class="dropdown-drinks">
+                        <p id="chooseAD" value="a_d">A-D</p>
+                        <p id="chooseEI" value="e_i">E-I</p>
+                        <p id="chooseJN" value="j_n">J-N</p>
+                        <p id="chooseOS" value="o_s">O-S</p>
+                        <p id="chooseTZ" value="t_z">T-Z</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ingredient-drinks">
+                <div class="dropdown">
+                    <button class="dropbtn">Choose a Drink</button>
+                    <div class="dropdown-drinks">
+                        <p id="chooseGin" value="Gin">GIN</p>
+                        <p id="chooseRum" value="Rum">RUM</p>
+                        <p id="chooseTequila" value="Tequila">TEQUILA</p>
+                        <p id="chooseVodka" value="Vodka">VODKA</p>
+                        <p id="chooseWhiskey" value="Whiskey">BOURBON</p>
+                    </div>
+                  </div>
+
+            </div>
+            <div class="random-drinks"><button class="dropbtn" id="randDrink">Random Drink</button></div>
         </div>
 
         <div class="bottom-container">
-            <div class="drinks-container">
-                <div class ="drink-container"></div>
-                <div class ="drink-container"></div>
-                <div class ="drink-container"></div>
-                <div class ="drink-container"></div>
-                <div class ="drink-container"></div>
-                <div class ="drink-container"></div>
-                <div class ="drink-container"></div>
-                <div class ="drink-container"></div>
-                <div class ="drink-container"></div>
+            <div id="allDrinks" class="drinks-container">
             </div>
-            <div class="scroll-bar"></div>
-            <div class="bottom-right-container">
-                <div class ="large-img"></div>
-                <div class ="drink-description"></div>
+            
+            
+            <div class="bottom-right-container" id="rightContainer">
+                
             </div>
 
         </div>    
