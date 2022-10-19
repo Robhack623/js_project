@@ -1,7 +1,7 @@
 #  SPIRIT GUIDE 
 
 <p align="center">
-    <img src="images/ghost_logo.png" width="460px height="300px">
+    <img src="images/ghost_logo.png" width="230px" height="150px">
 </P>
 
 * **Purpose of the app:** 
