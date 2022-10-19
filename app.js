@@ -1045,21 +1045,43 @@ const searchBar = document.getElementById("searchBar")
 searchBar.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
         const searchString = e.target.value.toLowerCase();
-        async function getUserSearch() {
+        async function getUserSearchMobile() {
             const url = "https://www.thecocktaildb.com/api/json/v2/9973533/search.php?s=" + searchString
             let response = await fetch(url)
             let bevs = await response.json()  
             let drinks = bevs.drinks
+            console.log(drinks)
             let drink = drinks.map(function(result){
+                
                 return`
-                <div class="drink-container">${result.strDrink}<img class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+                <div class="drink-container" onclick='passAnotherMobile(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherMobile(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
                 `
             })
-            allDrinks.innerHTML = drink
+            allDrinks.innerHTML = drink.join("")
         }
-        getUserSearch()
+        async function getUserSearchDesktop() {
+            const url = "https://www.thecocktaildb.com/api/json/v2/9973533/search.php?s=" + searchString
+            let response = await fetch(url)
+            let bevs = await response.json()  
+            let drinks = bevs.drinks
+            console.log(drinks)
+            let drink = drinks.map(function(result){
+                
+                return`
+                <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+                `
+            })
+            allDrinks.innerHTML = drink.join("")
+        }
+        if(screenSize.matches){
+            getUserSearchDesktop() 
+            }else{
+            getUserSearchMobile()   
+            }  
     }
 })
+
+
 
 const chooseGin = document.getElementById('chooseGin');
 const chooseRum = document.getElementById('chooseRum');
