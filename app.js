@@ -1237,3 +1237,59 @@ async function passAnotherDesktop(chooseThisDrink) {
     rightContainer.innerHTML = thisDrink.join('')
 }
 
+
+// hides drop down menu when user clicks anywhere on screen
+(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document);
+
+async function getPopularDrinksDesktop() {
+
+    const url = "https://www.thecocktaildb.com/api/json/v2/9973533/popular.php"
+
+    let response = await fetch(url)
+    let bevs = await response.json()
+    
+    let drinks = bevs.drinks
+    
+    let drink = drinks.map(function(result){
+        return`
+        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        `
+    })
+        allDrinks.innerHTML += drink.join("")
+}
+
+async function getPopularDrinksMobile() {
+
+    const url = "https://www.thecocktaildb.com/api/json/v2/9973533/popular.php"
+
+    let response = await fetch(url)
+    let bevs = await response.json()
+    
+    let drinks = bevs.drinks
+    
+    let drink = drinks.map(function(result){
+        return`
+        <div class="drink-container" onclick='passAnotherMobile(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherMobile(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        `
+    })
+        allDrinks.innerHTML += drink.join("")
+}
+
+function doTheFunkyChicken(){
+    console.log("Na na nana na na na Na na nana na na na CLUCK CLUCK CLUCK CLUCK!")
+}
+
+window.onload = function(){
+    if (screenSize.matches){
+    getPopularDrinksDesktop() ; getRandomDrinkDesktop()
+    }else{
+    getPopularDrinksMobile() ; doTheFunkyChicken()
+    }
+}
+
+
+WebFont.load({
+    google: {
+      families: ['Ubuntu']
+    }
+  });
