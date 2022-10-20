@@ -1097,7 +1097,6 @@ searchBar.addEventListener('keypress', function (e) {
             let response = await fetch(url)
             let bevs = await response.json()  
             let drinks = bevs.drinks
-            console.log(drinks)
             let drink = drinks.map(function(result){
                 
                 return`
@@ -1111,7 +1110,6 @@ searchBar.addEventListener('keypress', function (e) {
             let response = await fetch(url)
             let bevs = await response.json()  
             let drinks = bevs.drinks
-            console.log(drinks)
             let drink = drinks.map(function(result){
                 
                 return`
@@ -1214,7 +1212,6 @@ async function passAnotherMobile(chooseThisDrink) {
     let response = await fetch(url)
     let drink = await response.json()
     let thisDrinks = drink.drinks
-    console.log(thisDrinks)
     const thisDrink = thisDrinks.map(function(drinky) {
         return `
         <div class = "content-align" id="contentAlign">
@@ -1252,7 +1249,6 @@ async function passAnotherDesktop(chooseThisDrink) {
     let response = await fetch(url)
     let drink = await response.json()
     let thisDrinks = drink.drinks
-    console.log(thisDrinks)
     const thisDrink = thisDrinks.map(function(drinky) {
         return `
         <div class = "bottom-right-container" id="rightContainer">

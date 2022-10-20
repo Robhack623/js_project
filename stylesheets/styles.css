@@ -262,10 +262,12 @@ ul{
     }
 
     .about-us{
+        display: flex;
         height:5%;
         width: 100%;
         background-color: orange;
         margin-top: 30px;
+        justify-content: right;
     }
 
     .img-resize{
@@ -454,7 +456,7 @@ ul{
         border: black;
         border-style: solid;
         border-width: 2px;
-       
+        cursor: pointer;
     }
 
     .bottom-right-container{
@@ -493,7 +495,8 @@ ul{
 
 
     .about-us{
-        
+        display: flex;
+        justify-content: right;
         height:5%;
         width: 100%;
         background-color: orange;
@@ -573,7 +576,13 @@ ul{
     
 }
 
-
+.about-us button {
+    background-color: orange;
+    font-family: "Denk One";
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
 .pictures-box {
     width: 50%;
     display: flex;
@@ -584,7 +593,6 @@ ul{
 
 .us-container {
     height: 100px;
-    
     margin: 10px;
     background-color:  #f5c160;
     display: flex;
@@ -594,7 +602,6 @@ ul{
     align-self: center;
     border-radius: 5px;
     justify-content: center;
-    
     font-size: 20px;
     font-family: "Denk One";
     border: black;
