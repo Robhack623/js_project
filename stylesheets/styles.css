@@ -267,6 +267,8 @@ ul{
         background-color: orange;
         margin-top: 30px;
         justify-content: right;
+        position: sticky;
+        bottom: 0;
     }
 
     .img-resize{
