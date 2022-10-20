@@ -269,6 +269,10 @@ ul{
         justify-content: right;
         position: sticky;
         bottom: 0;
+        font-family: "Denk One";
+        font-size: 20px;
+        cursor: pointer;
+        color: black;
     }
 
     .img-resize{
@@ -500,9 +504,14 @@ ul{
     .about-us{
         display: flex;
         justify-content: right;
+        align-items: center;
         height:5%;
         width: 100%;
         background-color: orange;
+        font-family: "Denk One";
+        font-size: 20px;
+        cursor: pointer;
+        color: black;
     }
 
     .img-resize{
@@ -587,13 +596,6 @@ ul{
     
 }
 
-.about-us button {
-    background-color: orange;
-    font-family: "Denk One";
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-}
 .pictures-box {
     width: 50%;
     display: flex;
