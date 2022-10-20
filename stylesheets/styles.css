@@ -276,7 +276,10 @@ ul{
     .bottom-right-container{
         display: none;
     }
-
+    
+    .img-thumbnail{
+        border-radius: 5px;
+    }
 }
 
 
@@ -501,6 +504,10 @@ ul{
         height: 100px;
         width: auto;
         
+    }
+
+    .img-thumbnail{
+        border-radius: 5px;
     }
 }
 

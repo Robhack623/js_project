@@ -433,7 +433,9 @@ async function getLetterADesktop() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>
+        <p>${result.strDrink}</p>
+        <img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML = drink.join("")
@@ -450,7 +452,9 @@ async function getLetterBDesktop() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>
+        <p>${result.strDrink}</p>
+        <img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -484,7 +488,9 @@ async function getLetterDDesktop() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>
+        <p>${result.strDrink}</p>
+        <img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -501,7 +507,9 @@ async function getLetterEDesktop() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>
+        <p>${result.strDrink}</p>
+        <img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML = drink.join("")
@@ -518,7 +526,9 @@ async function getLetterFDesktop() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>
+        <p>${result.strDrink}</p>
+        <img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -535,7 +545,9 @@ async function getLetterGDesktop() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>
+        <p>${result.strDrink}</p>
+        <img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -552,7 +564,9 @@ async function getLetterHDesktop() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>
+        <p>${result.strDrink}</p>
+        <img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -569,7 +583,9 @@ async function getLetterIDesktop() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>
+        <p>${result.strDrink}</p>
+        <img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -586,7 +602,9 @@ async function getLetterJDesktop() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>
+        <p>${result.strDrink}</p>
+        <img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML = drink.join("")
@@ -603,7 +621,9 @@ async function getLetterKDesktop() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>
+        <p>${result.strDrink}</p>
+        <img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -620,7 +640,9 @@ async function getLetterLDesktop() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>
+        <p>${result.strDrink}</p>
+        <img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -637,7 +659,9 @@ async function getLetterMDesktop() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>
+        <p>${result.strDrink}</p>
+        <img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -654,7 +678,9 @@ async function getLetterNDesktop() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>
+        <p>${result.strDrink}</p>
+        <img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -671,7 +697,9 @@ async function getLetterODesktop() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>
+        <p>${result.strDrink}</p>
+        <img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML = drink.join("")
@@ -688,7 +716,9 @@ async function getLetterPDesktop() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>
+        <p>${result.strDrink}</p>
+        <img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -705,7 +735,9 @@ async function getLetterQDesktop() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>
+        <p>${result.strDrink}</p>
+        <img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -722,7 +754,9 @@ async function getLetterRDesktop() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>
+        ${result.strDrink}
+        <img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -739,7 +773,9 @@ async function getLetterSDesktop() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>
+        <p>${result.strDrink}</p>
+        <img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -756,7 +792,9 @@ async function getLetterTDesktop() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>
+        <p>${result.strDrink}</p>
+        <img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML = drink.join("")
@@ -773,7 +811,9 @@ async function getLetterVDesktop() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>
+        <p>${result.strDrink}</p>
+        <img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -790,7 +830,9 @@ async function getLetterWDesktop() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>
+        <p>${result.strDrink}</p>
+        <img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -807,7 +849,9 @@ async function getLetterYDesktop() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>
+        <p>${result.strDrink}</p>
+        <img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -824,7 +868,9 @@ async function getLetterZDesktop() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>
+        <p>${result.strDrink}</p>
+        <img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
@@ -1251,7 +1297,9 @@ async function getPopularDrinksDesktop() {
     
     let drink = drinks.map(function(result){
         return`
-        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>
+        <p>${result.strDrink}</p>
+        <img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
         `
     })
         allDrinks.innerHTML += drink.join("")
