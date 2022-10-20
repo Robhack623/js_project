@@ -1351,7 +1351,7 @@ aboutUs.addEventListener('click', function() {
     </div>
     <div class="drink-container" onclick='eddieInfo()'>
         <p style="text-decoration: underline;">Eddie Zaboroskie</p>
-        <img class='img-thumbnail' src="" />
+        <img class='img-thumbnail' src="images/eddie_pics/Eddie.jpg" />
     </div>
     <div class="drink-container" onclick='robInfo()'>
         <p style="text-decoration: underline;">Rob Hackett</p>
@@ -1394,26 +1394,26 @@ function eddieInfo() {
     <h1 style="text-decoration: underline;">Eddie Zaboroskie</h1>    
             <div class="pictures-box">
                 <div class="us-container">
-                    <img class='us-thumbnail' src="" />
+                    <img class='us-thumbnail' src="images/eddie_pics/SamAndEddie.JPG" />
                 </div>
                 <div class="us-container">
-                    <img class='us-thumbnail' src="" />
+                    <img class='us-thumbnail' src="images/eddie_pics/Waiting.JPG" />
                 </div>
                 <div class="us-container">
-                    <img class='us-thumbnail' src="" />
+                    <img class='us-thumbnail' src="images/eddie_pics/OppGenderGraded.png" />
                 </div>
             </div>
             <h3><u><em>About:</em></u></h3>
-            <p>Matt currently lives in West Texas, but was born in Upstate NY;  needless to say he has a profound admiration for nature and the beauty surrounding it. He is just starting his coding career and always looking for new places to practice his skill. You can often find him coding outside at the park with his dogs or at the lake on a nice summers day.</p>
+            <p>Eddie currently resides in Atlanta, GA. When he's not creating a fun and nifty piece of code, Eddie likes to spend his time with his wife Sam, his amazing son Leo, and his fluffy cat Alex. As a former theatre educator, Eddie is for the most part, a silly individual.</p>
             <h3><u><em>Hobbies:</em></u></h3>
             <ul>
-                <li>Avid Skiier</li>
-                <li>Poker/Pool Player Extraordinare</li>
-                <li>Alcoholic Beverage Conesuier</li>
-                <li>Good-Time Haver</li>
+                <li>Acting / Writing Scenes</li>
+                <li>Playing Video Games of ALL Kinds</li>
+                <li>Table Top Gaming (when there's time!)</li>
+                <li>Jogging and Disc Golf</li>
             </ul>
             <h3><u><em>Contact:</em></u></h3>
-            <label><strong>Email: </strong>matt.herringshaw@yahoo.com</label>
+            <label><strong>Email: </strong>zaboroskie.edward@gmail.com</label>
         
     `;
 }
