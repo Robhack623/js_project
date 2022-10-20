@@ -131,6 +131,9 @@ ul{
         border-style: solid;
         
     }
+    .search-wrapper img{
+        display:none;
+    }
 
     .nav-container{
         display:flex;
