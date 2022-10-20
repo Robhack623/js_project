@@ -273,7 +273,7 @@ ul{
         font-size: 20px;
         cursor: pointer;
         color: black;
-
+        border-top: 2px solid black;
     }
 
     .img-resize{
