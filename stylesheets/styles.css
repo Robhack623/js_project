@@ -503,7 +503,7 @@ ul{
 
     .about-us{
         display: flex;
-        justify-content: right;
+        justify-content: center;
         align-items: center;
         height:5%;
         width: 100%;
