@@ -1048,6 +1048,7 @@ async function getRandomDrinkDesktop() {
 
         return`
         <div class = "bottom-right-container" id="rightContainer">
+        <div class ="hidden-div"></div>
         <img class="large-img-mobile" src="${result.strDrinkThumb}">
         <h2>${result.strDrink}</h2>
         <p>${result.strInstructions}</p>
@@ -1256,6 +1257,7 @@ async function passAnotherDesktop(chooseThisDrink) {
     const thisDrink = thisDrinks.map(function(drinky) {
         return `
         <div class = "bottom-right-container" id="rightContainer">
+        <div class ="hidden-div"></div>
         <img class="large-img-mobile" src="${drinky.strDrinkThumb}">
         <h2>${drinky.strDrink}</h2>
         <ul>Ingredients:
@@ -1335,32 +1337,41 @@ window.onload = function(){
 }
 
 
-WebFont.load({
-    google: {
-      families: ['Ubuntu']
-    }
-  });
-const aboutUs = document.getElementById('aboutUs')
-
 
 aboutUs.addEventListener('click', function() {
+    if (screenSize.matches){
     allDrinks.innerHTML = `
-    <div class="drink-container" onclick='mattInfo()'>
+    <div class="drink-container" onclick='mattInfoDesktop()'>
         <p style="text-decoration: underline;">Matt Herringshaw</p>
         <img class='img-thumbnail' src="images/matt_pics/thumbnail-3.jpg" />
     </div>
-    <div class="drink-container" onclick='eddieInfo()'>
+    <div class="drink-container" onclick='eddieInfoDesktop()'>
         <p style="text-decoration: underline;">Eddie Zaboroskie</p>
         <img class='img-thumbnail' src="images/eddie_pics/Eddie.jpg" />
     </div>
-    <div class="drink-container" onclick='robInfo()'>
+    <div class="drink-container" onclick='robInfoDesktop()'>
         <p style="text-decoration: underline;">Rob Hackett</p>
         <img src="images/rob_pics/rob_wedding.jpg" class='img-thumbnail' />
     </div>`
+    }else{
+        allDrinks.innerHTML = `
+        <div class="drink-container" onclick='mattInfoMobile()'>
+            Matt Herringshaw
+            <img class='img-thumbnail' src="images/matt_pics/thumbnail-3.jpg" />
+        </div>
+        <div class="drink-container" onclick='eddieInfoMobile()'>
+            Eddie Zaboroskie
+            <img class='img-thumbnail' src="images/eddie_pics/Eddie.jpg" />
+        </div>
+        <div class="drink-container" onclick='robInfoMobile()'>
+            Rob Hackett
+            <img src="images/rob_pics/rob_wedding.jpg" class='img-thumbnail' />
+        </div>`    
+    }
 })
 
 
-function mattInfo() {
+function mattInfoDesktop() {
     rightContainer.innerHTML = `
     <h1 style="text-decoration: underline;">Matt Herringshaw</h1>    
             <div class="pictures-box">
@@ -1389,7 +1400,7 @@ function mattInfo() {
     `;
 }
 
-function eddieInfo() {
+function eddieInfoDesktop() {
     rightContainer.innerHTML = `
     <h1 style="text-decoration: underline;">Eddie Zaboroskie</h1>    
             <div class="pictures-box">
@@ -1418,7 +1429,7 @@ function eddieInfo() {
     `;
 }
 
-function robInfo() {
+function robInfoDesktop() {
     rightContainer.innerHTML = `
     <h1 style="text-decoration: underline;">Rob Hackett</h1>
         <div class="pictures-box">
@@ -1444,5 +1455,97 @@ function robInfo() {
             <h3><u><em>Contact:</em></u></h3>
             <label><strong>Email: </strong>robert.hackett87@gmail.com</label>
         </div>
+    `;
+}
+
+function mattInfoMobile() {
+    allDrinks.innerHTML = `
+    <div class="us-mobile-container">
+    <h1 style="text-decoration: underline;">Matt Herringshaw</h1>    
+            <div class="pictures-box">
+                <div class="us-container">
+                    <img class='us-thumbnail' src="images/matt_pics/thumbnail-2.jpg" />
+                </div>
+                <div class="us-container">
+                    <img class='us-thumbnail' src="images/matt_pics/thumbnail-1.jpg" />
+                </div>
+                <div class="us-container">
+                    <img class='us-thumbnail' src="images/matt_pics/thumbnail.jpg" />
+                </div>
+            </div>
+            <h3><u><em>About:</em></u></h3>
+            <p>Matt currently lives in West Texas, but was born in Upstate NY;  needless to say he has a profound admiration for nature and the beauty surrounding it. He is just starting his coding career and always looking for new places to practice his skill. You can often find him coding outside at the park with his dogs or at the lake on a nice summers day.</p>
+            <h3><u><em>Hobbies:</em></u></h3>
+            <ul>
+                <li>Avid Skiier</li>
+                <li>Poker/Pool Player Extraordinare</li>
+                <li>Alcoholic Beverage Conesuier</li>
+                <li>Good-Time Haver</li>
+            </ul>
+            <h3><u><em>Contact:</em></u></h3>
+            <label><strong>Email: </strong>matt.herringshaw@yahoo.com</label>
+    </div>
+        
+    `;
+}
+
+function eddieInfoMobile() {
+    allDrinks.innerHTML = `
+    <div class="us-mobile-container">
+        <h1 style="text-decoration: underline;">Eddie Zaboroskie</h1>   
+        <div class="pictures-box">
+            <div class="us-container">
+                <img class='us-thumbnail' src="images/eddie_pics/SamAndEddie.JPG" />
+            </div>
+            <div class="us-container">
+                <img class='us-thumbnail' src="images/eddie_pics/Waiting.JPG" />
+            </div>
+            <div class="us-container">
+                <img class='us-thumbnail' src="images/eddie_pics/OppGenderGraded.png" />
+            </div>
+        </div>
+        <h3><u><em>About:</em></u></h3>
+        <p>Eddie currently resides in Atlanta, GA. When he's not creating a fun and nifty piece of code, Eddie likes to spend his time with his wife Sam, his amazing son Leo, and his fluffy cat Alex. As a former theatre educator, Eddie is for the most part, a silly individual.</p>
+        <h3><u><em>Hobbies:</em></u></h3>
+        <ul>
+            <li>Acting / Writing Scenes</li>
+            <li>Playing Video Games of ALL Kinds</li>
+            <li>Table Top Gaming (when there's time!)</li>
+            <li>Jogging and Disc Golf</li>
+        </ul>
+        <h3><u><em>Contact:</em></u></h3>
+        <label><strong>Email: </strong>zaboroskie.edward@gmail.com</label>
+    </div>
+        
+    `;
+}
+
+function robInfoMobile() {
+    allDrinks.innerHTML = `
+    <div class="us-mobile-container">
+        <h1 style="text-decoration: underline;">Rob Hackett</h1>
+        <div class="pictures-box">
+            <div class="us-container">
+                <img class='us-thumbnail' src="images/rob_pics/rob_teaching.jpg" />
+            </div>
+            <div class="us-container">
+                <img class='us-thumbnail' src="images/rob_pics/rob_partying.jpg"  />
+            </div>
+            <div class="us-container">
+                <img class='us-thumbnail' src="images/rob_pics/rob_fluting.jpg" />
+            </div>
+        </div>
+            <h3><u><em>About:</em></u></h3>
+            <p>Rob is a born and raised Texan. He graduated from Texas A&M-Commerce in 2013 with his Bachelor's of Music Education. He then spent his next 9 years being a Middle School Band Director students in Dallas, Denton, and Rockwall Independent School Districts. He was an assistand director for 7 years and then a head director for his final 2 years. He moved to New Haven, Connecticut, in the summer of 2022 where he lives with his husband, 2 dogs, and 1 cat. </p>
+            <h3><u><em>Hobbies:</em></u></h3>
+            <ul>
+                <li>Musician - primary instruments are French Horn and Trumpet</li>
+                <li>Avid Gamer - PC and PS5</li>
+                <li>Love traveling</li>
+                <li>Being an Apple Fanboy (someone buy me a Mac Pro)</li>
+            </ul>
+            <h3><u><em>Contact:</em></u></h3>
+            <label><strong>Email: </strong>robert.hackett87@gmail.com</label>
+    </div>
     `;
 }
