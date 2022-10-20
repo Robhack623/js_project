@@ -8,32 +8,6 @@ const chooseJN = document.getElementById("chooseJN")
 const chooseOS = document.getElementById("chooseOS")
 const chooseTZ = document.getElementById("chooseTZ")
 
-async function getPopularDrinks() {
-
-    const url = "https://www.thecocktaildb.com/api/json/v2/9973533/popular.php"
-
-    let response = await fetch(url)
-    let bevs = await response.json()
-    
-    let drinks = bevs.drinks
-    
-    let drink = drinks.map(function(result){
-        return`
-        <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
-        `
-    })
-        allDrinks.innerHTML += drink.join("")
-}
-
-getPopularDrinks()
-
-window.onload = function(){
-    if (screenSize.matches){
-        getRandomDrinkDesktop()
-    }else{
-        getRandomDrinkMobile()
-    }
-}
 
 async function getLetterAMobile() {
 
@@ -1272,7 +1246,7 @@ aboutUs.addEventListener('click', function() {
     allDrinks.innerHTML = `
     <div class="name-img" onclick='mattInfo()'>
         <h2 style="text-decoration: underline;">Matt Herringshaw</h2>
-        <img src="images/matt_pics/thumbnail-3.jpg" style="width: 150px; height: 300" />
+        <img src="" />
     </div>
     <div class="name-img" onclick='eddieInfo()'>
         <h2 style="text-decoration: underline;">Eddie Zaboroskie</h2>
@@ -1290,18 +1264,16 @@ function mattInfo() {
     <div class="main-indv">
             <div class="name-img">
                 <h2>Matt Herringshaw</h2>
-                <img src="images/matt_pics/thumbnail-2.jpg" style="width: 25%; height: 20%"/>
-                <img src="images/matt_pics/thumbnail-1.jpg" style="width: 25%; height: 20%"/>
-                <img src="images/matt_pics/thumbnail.jpg" style="width: 25%; height: 20%"/>
+                <img src="" />
             </div>
             <h3><u><em>About:</em></u></h3>
             <p>Matt currently lives in West Texas, but was born in Upstate NY;  needless to say he has a profound admiration for nature and the beauty surrounding it. He is just starting his coding career and always looking for new places to practice his skill. You can often find him coding outside at the park with his dogs or at the lake on a nice summers day.</p>
             <h3><u><em>Hobbies:</em></u></h3>
             <ul>
                 <li>Avid Skiier</li>
-                <li>Poker/Pool Player Extraordinaire</li>
-                <li>Alcoholic Beverage Connoisseur</li>
+                <li>Alcoholic Beverage Conesuier</li>
                 <li>Good-Time Haver</li>
+                <li>Poker/Pool Player Extraordinare</li>
             </ul>
             <h3><u><em>Contact:</em></u></h3>
             <label><strong>Phone: </strong>867-5309</label>
