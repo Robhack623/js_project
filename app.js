@@ -1115,7 +1115,7 @@ searchBar.addEventListener('keypress', function (e) {
             let drink = drinks.map(function(result){
                 
                 return`
-                <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'>${result.strDrink}<img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
+                <div class="drink-container" onclick='passAnotherDesktop(${result.idDrink})'><p>${result.strDrink}</p><img onclick='passAnotherDesktop(${result.idDrink})' class="img-thumbnail" src="${result.strDrinkThumb}"></div>
                 `
             })
             allDrinks.innerHTML = drink.join("")
