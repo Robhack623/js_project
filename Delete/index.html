@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spirit Guide</title>
+    <link rel="icon" type="image/x-icon" href="images/ghost-logo-black-background.jpg"/>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+</head>
+<body>
+    
+    <div class="main-container">
+
+        <div class="logo"><img class="img-resize" src="images/cocktail.png"></div>
+
+        <div class="search-bar"><div class="search-wrapper"><input type="text" name="searchBar" id="searchBar" class="searchBar" placeholder="search for a drink" /><img src="images/ghost_mag_icon.png"></div></div>
+
+        <div class="nav-container">
+            <div class="az-drinks">
+                <div class="dropdown">
+                    <button class="dropbtn">Find a Drink</button>
+                    <div class="dropdown-drinks">
+                        <p id="chooseAD" value="a_d">A-D</p>
+                        <p id="chooseEI" value="e_i">E-I</p>
+                        <p id="chooseJN" value="j_n">J-N</p>
+                        <p id="chooseOS" value="o_s">O-S</p>
+                        <p id="chooseTZ" value="t_z">T-Z</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ingredient-drinks">
+                <div class="dropdown">
+                    <button class="dropbtn">Choose a Spirit</button>
+                    <div class="dropdown-drinks">
+                        <p id="chooseGin" value="Gin">GIN</p>
+                        <p id="chooseRum" value="Rum">RUM</p>
+                        <p id="chooseTequila" value="Tequila">TEQUILA</p>
+                        <p id="chooseVodka" value="Vodka">VODKA</p>
+                        <p id="chooseWhiskey" value="Whiskey">BOURBON</p>
+                    </div>
+                  </div>
+
+            </div>
+            <div class="random-drinks"><button class="dropbtn" id="randDrink">Random Drink</button></div>
+        </div>
+
+        <div class="bottom-container" id="bottomContainer">
+            <div id="allDrinks" class="drinks-container">
+            </div>
+            
+            
+            <div class="bottom-right-container" id="rightContainer">
+                
+            </div>
+
+        </div>    
+
+        <div class="about-us"><button id="aboutUs">ABOUT US</button> </div>
+
+    </div>
+
+
+
+    
+
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
