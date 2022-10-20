@@ -1,4 +1,4 @@
-#  :ghost: :ghost: :ghost: SPIRIT GUIDE :ghost: :ghost: :ghost:
+#  :ghost: :ghost: :ghost: :ghost: :ghost: :ghost: SPIRIT GUIDE :ghost: :ghost: :ghost: :ghost: :ghost: :ghost:
 
 <p align="center">
     <img src="images/ghost_logo.png" width="230px" height="250px">
