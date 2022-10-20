@@ -1049,6 +1049,7 @@ async function getRandomDrinkDesktop() {
         return`
         <div class = "bottom-right-container" id="rightContainer">
         <div class ="hidden-div"></div>
+        <h2>The Spirits Have Guided You To...</h2>
         <img class="large-img-mobile" src="${result.strDrinkThumb}">
         <h2>${result.strDrink}</h2>
         <ul><u>Ingredients:</u>
