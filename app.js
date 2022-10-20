@@ -1014,8 +1014,7 @@ async function getRandomDrinkMobile() {
         <div class = "content-align" id="contentAlign">
         <img class="large-img-mobile" src="${result.strDrinkThumb}">
         <h2>${result.strDrink}</h2>
-        <p>${result.strInstructions}</p>
-        <ul>
+        <ul><u>Ingredients:</u>
                 ${result.strIngredient1 ? `<li>${result.strIngredient1} - ${result.strMeasure1}</li>` : ""}
                 ${result.strIngredient2 ? `<li>${result.strIngredient2} - ${result.strMeasure2}</li>` : ""}
                 ${result.strIngredient3 ? `<li>${result.strIngredient3} - ${result.strMeasure3}</li>` : ""}
@@ -1032,6 +1031,7 @@ async function getRandomDrinkMobile() {
                 ${result.strIngredient14 ? `<li>${result.strIngredient14} - ${result.strMeasure14}</li>` : ""}
                 ${result.strIngredient15 ? `<li>${result.strIngredient15} - ${result.strMeasure15}</li>` : ""}
             </ul>
+            <p>${result.strInstructions}</p>
         </div>
         `
     })
@@ -1050,8 +1050,7 @@ async function getRandomDrinkDesktop() {
         <div class = "bottom-right-container" id="rightContainer">
         <img class="large-img-mobile" src="${result.strDrinkThumb}">
         <h2>${result.strDrink}</h2>
-        <p>${result.strInstructions}</p>
-        <ul>
+        <ul><u>Ingredients:</u>
                 ${result.strIngredient1 ? `<li>${result.strIngredient1} - ${result.strMeasure1}</li>` : ""}
                 ${result.strIngredient2 ? `<li>${result.strIngredient2} - ${result.strMeasure2}</li>` : ""}
                 ${result.strIngredient3 ? `<li>${result.strIngredient3} - ${result.strMeasure3}</li>` : ""}
@@ -1068,6 +1067,7 @@ async function getRandomDrinkDesktop() {
                 ${result.strIngredient14 ? `<li>${result.strIngredient14} - ${result.strMeasure14}</li>` : ""}
                 ${result.strIngredient15 ? `<li>${result.strIngredient15} - ${result.strMeasure15}</li>` : ""}
             </ul>
+            <p>${result.strInstructions}</p>
         </div>
         `
     })
@@ -1220,7 +1220,7 @@ async function passAnotherMobile(chooseThisDrink) {
         <div class = "content-align" id="contentAlign">
         <img class="large-img-mobile" src="${drinky.strDrinkThumb}"></img>
         <h2>${drinky.strDrink}</h2>
-        <ul>Ingredients:
+        <ul><u>Ingredients:</u>
             ${drinky.strIngredient1 ? `<li>${drinky.strIngredient1} - ${drinky.strMeasure1}</li>` : ""}
             ${drinky.strIngredient2 ? `<li>${drinky.strIngredient2} - ${drinky.strMeasure2}</li>` : ""}
             ${drinky.strIngredient3 ? `<li>${drinky.strIngredient3} - ${drinky.strMeasure3}</li>` : ""}
@@ -1258,7 +1258,7 @@ async function passAnotherDesktop(chooseThisDrink) {
         <div class = "bottom-right-container" id="rightContainer">
         <img class="large-img-mobile" src="${drinky.strDrinkThumb}">
         <h2>${drinky.strDrink}</h2>
-        <ul>Ingredients:
+        <ul><u>Ingredients:</u>
             ${drinky.strIngredient1 ? `<li>${drinky.strIngredient1} - ${drinky.strMeasure1}</li>` : ""}
             ${drinky.strIngredient2 ? `<li>${drinky.strIngredient2} - ${drinky.strMeasure2}</li>` : ""}
             ${drinky.strIngredient3 ? `<li>${drinky.strIngredient3} - ${drinky.strMeasure3}</li>` : ""}
