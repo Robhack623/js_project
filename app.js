@@ -1272,7 +1272,7 @@ aboutUs.addEventListener('click', function() {
     allDrinks.innerHTML = `
     <div class="name-img" onclick='mattInfo()'>
         <h2 style="text-decoration: underline;">Matt Herringshaw</h2>
-        <img src="" />
+        <img src="images/matt_pics/thumbnail-3.jpg" style="width: 150px; height: 300" />
     </div>
     <div class="name-img" onclick='eddieInfo()'>
         <h2 style="text-decoration: underline;">Eddie Zaboroskie</h2>
@@ -1290,16 +1290,18 @@ function mattInfo() {
     <div class="main-indv">
             <div class="name-img">
                 <h2>Matt Herringshaw</h2>
-                <img src="" />
+                <img src="images/matt_pics/thumbnail-2.jpg" style="width: 25%; height: 20%"/>
+                <img src="images/matt_pics/thumbnail-1.jpg" style="width: 25%; height: 20%"/>
+                <img src="images/matt_pics/thumbnail.jpg" style="width: 25%; height: 20%"/>
             </div>
             <h3><u><em>About:</em></u></h3>
             <p>Matt currently lives in West Texas, but was born in Upstate NY;  needless to say he has a profound admiration for nature and the beauty surrounding it. He is just starting his coding career and always looking for new places to practice his skill. You can often find him coding outside at the park with his dogs or at the lake on a nice summers day.</p>
             <h3><u><em>Hobbies:</em></u></h3>
             <ul>
                 <li>Avid Skiier</li>
-                <li>Alcoholic Beverage Conesuier</li>
+                <li>Poker/Pool Player Extraordinaire</li>
+                <li>Alcoholic Beverage Connoisseur</li>
                 <li>Good-Time Haver</li>
-                <li>Poker/Pool Player Extraordinare</li>
             </ul>
             <h3><u><em>Contact:</em></u></h3>
             <label><strong>Phone: </strong>867-5309</label>
