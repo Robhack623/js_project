@@ -1082,8 +1082,6 @@ searchBar.addEventListener('keypress', function (e) {
     }
 })
 
-
-
 const chooseGin = document.getElementById('chooseGin');
 const chooseRum = document.getElementById('chooseRum');
 const chooseTequila = document.getElementById('chooseTequila');
