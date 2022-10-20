@@ -1271,16 +1271,16 @@ const aboutUs = document.getElementById('aboutUs')
 aboutUs.addEventListener('click', function() {
     allDrinks.innerHTML = `
     <div class="name-img" onclick='mattInfo()'>
-        <h2>Matt Herringshaw</h2>
+        <h2 style="text-decoration: underline;">Matt Herringshaw</h2>
         <img src="" />
     </div>
     <div class="name-img" onclick='eddieInfo()'>
-        <h2>Eddie Zaboroskie</h2>
+        <h2 style="text-decoration: underline;">Eddie Zaboroskie</h2>
         <img src="" />
     </div>
     <div class="name-img" onclick='robInfo()'>
-        <h2>Rob Hackett</h2>
-        <img src="" />
+        <h2 style="text-decoration: underline;">Rob Hackett</h2>
+        <img src="images/rob_pics/rob_wedding.jpg" style="width: 150px; height: 300" />
     </div>`
 })
 
@@ -1337,22 +1337,24 @@ function robInfo() {
     rightContainer.innerHTML = `
     <div class="main-indv">
             <div class="name-img">
-                <h2>Rob Hackett</h2>
-                <img src="" />
+                <h1 style="text-decoration: underline;">Rob Hackett</h1>
+                <img src="images/rob_pics/rob_teaching.jpg" style="width: 29%; height: 222px"/>
+                <img src="images/rob_pics/rob_partying.jpg"  style="width: 20%; height: 20%"/>
+                <img src="images/rob_pics/rob_fluting.jpg" style="width: 28%; height: 20%"/>
             </div>
             <h3><u><em>About:</em></u></h3>
-            <p>Matt currently lives in West Texas, but was born in Upstate NY;  needless to say he has a profound admiration for nature and the beauty surrounding it. He is just starting his coding career and always looking for new places to practice his skill. You can often find him coding outside at the park with his dogs or at the lake on a nice summers day.</p>
+            <p>Rob is a born and raised Texan. He graduated from Texas A&M-Commerce in 2013 with his Bachelor's of Music Education. He then spent his next 9 years being a Middle School Band Director students in Dallas, Denton, and Rockwall Independent School Districts. He was an assistand director for 7 years and then a head director for his final 2 years. He moved to New Haven, Connecticut, in the summer of 2022 where he lives with his husband, 2 dogs, and 1 cat. </p>
             <h3><u><em>Hobbies:</em></u></h3>
             <ul>
-                <li>Avid Skiier</li>
-                <li>Alcoholic Beverage Conesuier</li>
-                <li>Good-Time Haver</li>
-                <li>Poker/Pool Player Extraordinare</li>
+                <li>Musician - primary instruments are French Horn and Trumpet</li>
+                <li>Avid Gamer - PC and PS5</li>
+                <li>Love traveling</li>
+                <li>Being an Apple Fanboy (someone buy me a Mac Pro)</li>
             </ul>
             <h3><u><em>Contact:</em></u></h3>
-            <label><strong>Phone: </strong>867-5309</label>
+            <label><strong>Phone: </strong>868-5118</label>
             <br>
-            <label><strong>Email: </strong>wouldntU@like.2Know</label>
+            <label><strong>Email: </strong>robert.hackett87@gmail.com</label>
         </div>
     `;
 }
