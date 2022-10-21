@@ -1415,7 +1415,7 @@ function eddieInfoDesktop() {
                 
             </div>
             <h3><u><em>About:</em></u></h3>
-            <p>Eddie currently resides in Atlanta, GA. When he's not creating a fun and nifty piece of code, Eddie likes to spend his time with his wife Sam, his amazing son Leo, and his fluffy cat Alex. As a former theatre educator, Eddie is for the most part, a silly individual.</p>
+            <p>Eddie currently resides in Atlanta, GA. When he's not creating a fun and nifty piece of code, Eddie likes to spend his time with his wife Sam, his amazing son Leo, and his fluffy cat Alex. As a former theatre educator, Eddie is, for the most part, a silly individual.</p>
             <h3><u><em>Hobbies:</em></u></h3>
             <ul>
                 <li>Acting / Writing Scenes</li>
@@ -1506,7 +1506,7 @@ function eddieInfoMobile() {
             </div>
         </div>
         <h3><u><em>About:</em></u></h3>
-        <p>Eddie currently resides in Atlanta, GA. When he's not creating a fun and nifty piece of code, Eddie likes to spend his time with his wife Sam, his amazing son Leo, and his fluffy cat Alex. As a former theatre educator, Eddie is for the most part, a silly individual.</p>
+        <p>Eddie currently resides in Atlanta, GA. When he's not creating a fun and nifty piece of code, Eddie likes to spend his time with his wife Sam, his amazing son Leo, and his fluffy cat Alex. As a former theatre educator, Eddie is, for the most part, a silly individual.</p>
         <h3><u><em>Hobbies:</em></u></h3>
         <ul>
             <li>Acting / Writing Scenes</li>
