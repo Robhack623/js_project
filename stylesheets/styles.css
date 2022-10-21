@@ -119,8 +119,8 @@ ul{
         background-color: orange;
         display: flex;
         justify-content: center;
-        padding-top: 12px;
-        padding-bottom: 5px;
+        padding-top: 5px;
+        padding-bottom: 10px;
        
     }
 
@@ -629,7 +629,13 @@ ul{
 
 .us-thumbnail {
     height: 100px;
-    width: 100px;
+    width: auto;
+}
+
+.us-thumbnail-desk{
+    height: 150px;
+    width: auto;
+    margin-bottom: 10px;
 }
 
 .us-mobile-container{
@@ -638,4 +644,8 @@ ul{
     text-align: center;
     align-items: center;
 
+}
+
+.li{
+    margin-left: -1em;
 }

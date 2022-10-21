@@ -1340,29 +1340,29 @@ aboutUs.addEventListener('click', function() {
     allDrinks.innerHTML = `
     <div class="drink-container" onclick='mattInfoDesktop()'>
         <p style="text-decoration: underline;">Matt Herringshaw</p>
-        <img class='img-thumbnail' src="images/matt_pics/thumbnail-3.jpg" />
+        <img class='us-thumbnail-desk' src="images/matt_pics/thumbnail-3.jpg" />
     </div>
     <div class="drink-container" onclick='eddieInfoDesktop()'>
         <p style="text-decoration: underline;">Eddie Zaboroskie</p>
-        <img class='img-thumbnail' src="images/eddie_pics/Eddie.jpg" />
+        <img class='us-thumbnail-desk' src="images/eddie_pics/Eddie.jpg" />
     </div>
     <div class="drink-container" onclick='robInfoDesktop()'>
         <p style="text-decoration: underline;">Rob Hackett</p>
-        <img src="images/rob_pics/rob_wedding.jpg" class='img-thumbnail' />
+        <img class='us-thumbnail-desk' src="images/rob_pics/rob_wedding.jpg"  />
     </div>`
     }else{
         allDrinks.innerHTML = `
         <div class="drink-container" onclick='mattInfoMobile()'>
             Matt Herringshaw
-            <img class='img-thumbnail' src="images/matt_pics/thumbnail-3.jpg" />
+            <img class='us-thumbnail' src="images/matt_pics/thumbnail-3.jpg" />
         </div>
         <div class="drink-container" onclick='eddieInfoMobile()'>
             Eddie Zaboroskie
-            <img class='img-thumbnail' src="images/eddie_pics/Eddie.jpg" />
+            <img class='us-thumbnail' src="images/eddie_pics/Eddie.jpg" />
         </div>
         <div class="drink-container" onclick='robInfoMobile()'>
             Rob Hackett
-            <img src="images/rob_pics/rob_wedding.jpg" class='img-thumbnail' />
+            <img src="images/rob_pics/rob_wedding.jpg" class='us-thumbnail' />
         </div>`    
     }
 })
@@ -1370,7 +1370,9 @@ aboutUs.addEventListener('click', function() {
 
 function mattInfoDesktop() {
     rightContainer.innerHTML = `
-    <h1 style="text-decoration: underline;">Matt Herringshaw</h1>    
+    <h1 style="text-decoration: underline;">Matt Herringshaw</h1>   
+    <label><strong>Email: </strong>robert.hackett87@gmail.com</label>
+    <br> 
             <div class="pictures-box">
                 <div class="us-container">
                     <img class='us-thumbnail' src="images/matt_pics/thumbnail-2.jpg" />
@@ -1391,15 +1393,16 @@ function mattInfoDesktop() {
                 <li>Alcoholic Beverage Conesuier</li>
                 <li>Good-Time Haver</li>
             </ul>
-            <h3><u><em>Contact:</em></u></h3>
-            <label><strong>Email: </strong>matt.herringshaw@yahoo.com</label>
+           
         
     `;
 }
 
 function eddieInfoDesktop() {
     rightContainer.innerHTML = `
-    <h1 style="text-decoration: underline;">Eddie Zaboroskie</h1>    
+    <h1 style="text-decoration: underline;">Eddie Zaboroskie</h1>
+    <label><strong>Email: </strong>robert.hackett87@gmail.com</label>
+    <br>    
             <div class="pictures-box">
                 <div class="us-container">
                     <img class='us-thumbnail' src="images/eddie_pics/SamAndEddie.JPG" />
@@ -1420,8 +1423,7 @@ function eddieInfoDesktop() {
                 <li>Table Top Gaming (when there's time!)</li>
                 <li>Jogging and Disc Golf</li>
             </ul>
-            <h3><u><em>Contact:</em></u></h3>
-            <label><strong>Email: </strong>zaboroskie.edward@gmail.com</label>
+            
         
     `;
 }
@@ -1429,6 +1431,8 @@ function eddieInfoDesktop() {
 function robInfoDesktop() {
     rightContainer.innerHTML = `
     <h1 style="text-decoration: underline;">Rob Hackett</h1>
+    <label><strong>Email: </strong>robert.hackett87@gmail.com</label>
+    <br>
         <div class="pictures-box">
             <div class="us-container">
                 <img class='us-thumbnail' src="images/rob_pics/rob_teaching.jpg" />
@@ -1450,15 +1454,17 @@ function robInfoDesktop() {
                 <li>Being an Apple Fanboy (someone buy me a Mac Pro)</li>
             </ul>
             <h3><u><em>Contact:</em></u></h3>
-            <label><strong>Email: </strong>robert.hackett87@gmail.com</label>
-        </div>
+            
+        
     `;
 }
 
 function mattInfoMobile() {
     allDrinks.innerHTML = `
     <div class="us-mobile-container">
-    <h1 style="text-decoration: underline;">Matt Herringshaw</h1>    
+    <h1 style="text-decoration: underline;">Matt Herringshaw</h1>
+    <label><strong>Email: </strong>matt.herringshaw@yahoo.com</label>
+            <br>
             <div class="pictures-box">
                 <div class="us-container">
                     <img class='us-thumbnail' src="images/matt_pics/thumbnail-2.jpg" />
@@ -1479,8 +1485,8 @@ function mattInfoMobile() {
                 <li>Alcoholic Beverage Conesuier</li>
                 <li>Good-Time Haver</li>
             </ul>
-            <h3><u><em>Contact:</em></u></h3>
-            <label><strong>Email: </strong>matt.herringshaw@yahoo.com</label>
+            
+            
     </div>
         
     `;
@@ -1489,7 +1495,9 @@ function mattInfoMobile() {
 function eddieInfoMobile() {
     allDrinks.innerHTML = `
     <div class="us-mobile-container">
-        <h1 style="text-decoration: underline;">Eddie Zaboroskie</h1>   
+        <h1 style="text-decoration: underline;">Eddie Zaboroskie</h1>
+        <label><strong>Email: </strong>zaboroskie.edward@gmail.com</label>
+        <br>   
         <div class="pictures-box">
             <div class="us-container">
                 <img class='us-thumbnail' src="images/eddie_pics/SamAndEddie.JPG" />
@@ -1510,8 +1518,8 @@ function eddieInfoMobile() {
             <li>Table Top Gaming (when there's time!)</li>
             <li>Jogging and Disc Golf</li>
         </ul>
-        <h3><u><em>Contact:</em></u></h3>
-        <label><strong>Email: </strong>zaboroskie.edward@gmail.com</label>
+        
+        
     </div>
         
     `;
@@ -1521,6 +1529,8 @@ function robInfoMobile() {
     allDrinks.innerHTML = `
     <div class="us-mobile-container">
         <h1 style="text-decoration: underline;">Rob Hackett</h1>
+        <label><strong>Email: </strong>robert.hackett87@gmail.com</label>
+        <br>
         <div class="pictures-box">
             <div class="us-container">
                 <img class='us-thumbnail' src="images/rob_pics/rob_teaching.jpg" />
@@ -1541,8 +1551,8 @@ function robInfoMobile() {
                 <li>Love traveling</li>
                 <li>Being an Apple Fanboy (someone buy me a Mac Pro)</li>
             </ul>
-            <h3><u><em>Contact:</em></u></h3>
-            <label><strong>Email: </strong>robert.hackett87@gmail.com</label>
+            
+            
     </div>
     `;
 }
