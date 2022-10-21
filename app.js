@@ -1371,18 +1371,18 @@ aboutUs.addEventListener('click', function() {
 function mattInfoDesktop() {
     rightContainer.innerHTML = `
     <h1 style="text-decoration: underline;">Matt Herringshaw</h1>   
-    <label><strong>Email: </strong>robert.hackett87@gmail.com</label>
+    <label><strong>Email: </strong>matt.herringshaw@yahoo.com</label>
     <br> 
             <div class="pictures-box">
-                <div class="us-container">
-                    <img class='us-thumbnail' src="images/matt_pics/thumbnail-2.jpg" />
-                </div>
-                <div class="us-container">
-                    <img class='us-thumbnail' src="images/matt_pics/thumbnail-1.jpg" />
-                </div>
-                <div class="us-container">
-                    <img class='us-thumbnail' src="images/matt_pics/thumbnail.jpg" />
-                </div>
+                
+                    <img class='us-thumbnail-desk' src="images/matt_pics/thumbnail-2.jpg" />
+               
+                
+                    <img class='us-thumbnail-desk' src="images/matt_pics/thumbnail-1.jpg" />
+                
+               
+                    <img class='us-thumbnail-desk' src="images/matt_pics/thumbnail.jpg" />
+               
             </div>
             <h3><u><em>About:</em></u></h3>
             <p>Matt currently lives in West Texas, but was born in Upstate NY;  needless to say he has a profound admiration for nature and the beauty surrounding it. He is just starting his coding career and always looking for new places to practice his skill. You can often find him coding outside at the park with his dogs or at the lake on a nice summers day.</p>
@@ -1401,18 +1401,18 @@ function mattInfoDesktop() {
 function eddieInfoDesktop() {
     rightContainer.innerHTML = `
     <h1 style="text-decoration: underline;">Eddie Zaboroskie</h1>
-    <label><strong>Email: </strong>robert.hackett87@gmail.com</label>
+    <label><strong>Email: </strong>zaboroskie.edward@gmail.com</label>
     <br>    
             <div class="pictures-box">
-                <div class="us-container">
-                    <img class='us-thumbnail' src="images/eddie_pics/SamAndEddie.JPG" />
-                </div>
-                <div class="us-container">
-                    <img class='us-thumbnail' src="images/eddie_pics/Waiting.JPG" />
-                </div>
-                <div class="us-container">
-                    <img class='us-thumbnail' src="images/eddie_pics/OppGenderGraded.png" />
-                </div>
+                
+                    <img class='us-thumbnail-desk' src="images/eddie_pics/SamAndEddie.JPG" />
+               
+               
+                    <img class='us-thumbnail-desk' src="images/eddie_pics/Waiting.JPG" />
+                
+                
+                    <img class='us-thumbnail-desk' src="images/eddie_pics/OppGenderGraded.png" />
+                
             </div>
             <h3><u><em>About:</em></u></h3>
             <p>Eddie currently resides in Atlanta, GA. When he's not creating a fun and nifty piece of code, Eddie likes to spend his time with his wife Sam, his amazing son Leo, and his fluffy cat Alex. As a former theatre educator, Eddie is for the most part, a silly individual.</p>
@@ -1434,15 +1434,15 @@ function robInfoDesktop() {
     <label><strong>Email: </strong>robert.hackett87@gmail.com</label>
     <br>
         <div class="pictures-box">
-            <div class="us-container">
-                <img class='us-thumbnail' src="images/rob_pics/rob_teaching.jpg" />
-            </div>
-            <div class="us-container">
-                <img class='us-thumbnail' src="images/rob_pics/rob_partying.jpg"  />
-            </div>
-            <div class="us-container">
-                <img class='us-thumbnail' src="images/rob_pics/rob_fluting.jpg" />
-            </div>
+            
+                <img class='us-thumbnail-desk' src="images/rob_pics/rob_teaching.jpg" />
+            
+            
+                <img class='us-thumbnail-desk' src="images/rob_pics/rob_partying.jpg"  />
+            
+           
+                <img class='us-thumbnail-desk' src="images/rob_pics/rob_fluting.jpg" />
+            
         </div>
             <h3><u><em>About:</em></u></h3>
             <p>Rob is a born and raised Texan. He graduated from Texas A&M-Commerce in 2013 with his Bachelor's of Music Education. He then spent his next 9 years being a Middle School Band Director students in Dallas, Denton, and Rockwall Independent School Districts. He was an assistand director for 7 years and then a head director for his final 2 years. He moved to New Haven, Connecticut, in the summer of 2022 where he lives with his husband, 2 dogs, and 1 cat. </p>
