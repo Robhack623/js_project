@@ -1452,11 +1452,7 @@ function robInfoDesktop() {
                 <li>Avid Gamer - PC and PS5</li>
                 <li>Love traveling</li>
                 <li>Being an Apple Fanboy (someone buy me a Mac Pro)</li>
-            </ul>
-            <h3><u><em>Contact:</em></u></h3>
-            
-        
-    `;
+            </ul>`;
 }
 
 function mattInfoMobile() {
